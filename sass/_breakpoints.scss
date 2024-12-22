@@ -1,0 +1,14 @@
+$sp-inner: 768px;
+$tab-inner: 1024px;
+
+$breakpoints: (
+  "sp": "screen and (max-width: #{$sp-inner - 1px})",
+  "tab": "screen and (min-width: #{$sp-inner}) and (max-width: #{$tab-inner})",
+  "pc": "screen and (min-width: #{$sp-inner})",
+);
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

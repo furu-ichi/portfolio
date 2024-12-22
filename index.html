@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ふるいち's Portfolio</title>
+    <meta
+      name="description"
+      content="フリーランスWEBコーダーふるいちのポートフォリオサイトです。「HPが欲しい」「既存のサイトを修正・改善したい」など、是非お気軽にご相談ください。"
+    />
+
+    <!-- 検索にヒットさせない -->
+    <meta name="robots" content="noindex" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Xカード指定 -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@furu_work" />
+    <meta property="og:url" content="https://furu-ichi-web.com/" />
+    <meta property="og:title" content="ふるいち's Portfolio" />
+    <meta
+      property="og:description"
+      content="Web制作でフリーランスをしている ふるいち といいます。※デイトラコミュニティにのみ公開中"
+    />
+    <meta property="og:image" content="./img/self/logo.png" />
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- 全体をラップする（ヘッダ位置を横幅により可変にする為） -->
+    <div class="wrapper">
+      <!-- ヘッダー -->
+      <header class="header">
+        <div class="header__sticky">
+          <div class="header__container">
+            <img
+              class="logo-img"
+              src="./img/self/logo_transparent.png"
+              alt=""
+            />
+            <div class="header__text">ふるいち's<br />Portfolio</div>
+            <a
+              class="header__x-link"
+              href="https://x.com/furu_work"
+              target="_blank"
+            >
+              <img src="./img/self/icon_x_2.png" alt="" />
+            </a>
+            <button
+              type="button"
+              id="js-header__icon"
+              class="header__icon"
+            ></button>
+          </div>
+          <div id="js-header__nav" class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#service" class="header__nav-link">
+                  <span class="header__nav-icon">
+                    <img src="./img/self/icon_service.png" alt="" />
+                  </span>
+                  <span class="header__nav-text">Service -</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#works" class="header__nav-link">
+                  <span class="header__nav-icon">
+                    <img src="./img/self/icon_works.png" alt="" />
+                  </span>
+                  <span class="header__nav-text">Works -</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#about" class="header__nav-link">
+                  <span class="header__nav-icon">
+                    <img src="./img/self/icon_about.png" alt="" />
+                  </span>
+                  <span class="header__nav-text">About -</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#flow" class="header__nav-link">
+                  <span class="header__nav-icon">
+                    <img src="./img/self/icon_work_flow.png" alt="" />
+                  </span>
+                  <span class="header__nav-text">Work Flow -</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#message" class="header__nav-link">
+                  <span class="header__nav-icon">
+                    <img src="./img/self/icon_message.png" alt="" />
+                  </span>
+                  <span class="header__nav-text">Message -</span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a
+                  class="header__nav-x"
+                  href="https://x.com/furu_work"
+                  target="_blank"
+                >
+                  <img src="./img/self/icon_x_2.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- メインコンテンツ -->
+      <main class="main">
+        <!-- ファーストビュー -->
+        <div class="fv">
+          <div class="fv__container">
+            <div class="fv__heading">
+              <div class="fv__heading-main">Web Corder -</div>
+              <div class="fv__heading-sub">
+                ご覧いただきありがとうございます。
+                <br />
+                フリーランスでWEBコーダーをしている
+                <br />
+                ふるいちと申します。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service -->
+        <section id="service" class="section section_bgc2">
+          <div class="section__inner">
+            <div class="section__heading">
+              <div class="section__heading-main">Service -</div>
+              <div class="section__heading-sub">提供サービス</div>
+            </div>
+            <p class="section__lead-text">
+              行っているサービス内容です。
+              <br />
+              「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、是非、お気軽にご相談ください。
+            </p>
+            <ul class="service__list">
+              <li class="service__item">
+                <div class="service__item-img">
+                  <img src="./img/img_service1.svg" alt="" />
+                </div>
+                <h3 class="service__item-title">ホームページ制作</h3>
+                <div class="service__item-text">
+                  ご要望に応じて柔軟にご提案させていただきます。目的を達成するためのホームページを一緒に作成していきましょう！
+                </div>
+              </li>
+              <li class="service__item">
+                <div class="service__item-img">
+                  <img src="./img/img_service2.svg" alt="" />
+                </div>
+                <h3 class="service__item-title">ホームページ修正</h3>
+                <div class="service__item-text">
+                  文言の変更や表示崩れなど、ホームページでのちょっとしたお困りごとに対応いたします。
+                </div>
+              </li>
+              <li class="service__item">
+                <div class="service__item-img">
+                  <img src="./img/img_service3.svg" alt="" />
+                </div>
+                <h3 class="service__item-title">ホームページ相談</h3>
+                <div class="service__item-text">
+                  ホームページ制作に関するご相談を無料でお受けしております。些細なことでもお気軽にご相談ください！
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Works -->
+        <section id="works" class="section section-bgc">
+          <div class="section__inner">
+            <div class="section__heading">
+              <div class="section__heading-main">Works -</div>
+              <div class="section__heading-sub">実績紹介</div>
+            </div>
+            <p class="section__lead-text">
+              これまで制作したWebサイトです。
+              <br />
+              当サイトも自ら制作していますので実績の一つとして御覧ください。
+            </p>
+            <ul class="works__list">
+              <li class="works__item">
+                <img src="./img/img_works1.jpg" alt="" />
+                <div class="works__item-text">
+                  <h3 class="works__item-title">
+                    ポートフォリオサイト（当サイト）
+                  </h3>
+                  <!-- <p class="works__item-detail">詳しく見る</p> -->
+                </div>
+              </li>
+              <li class="works__item">
+                <img src="./img/img_works2.jpg" alt="" />
+                <div class="works__item-text">
+                  <h3 class="works__item-title">
+                    スイーツ店公式サイト（サンプル）
+                  </h3>
+                  <!-- <p class="works__item-detail">詳しく見る</p> -->
+                  <p class="works__item-prepare">※準備中</p>
+                </div>
+              </li>
+              <!-- <li class="works__item">
+                <img src="./img/img_works3.jpg" alt="" />
+                <div class="works__item-text">
+                  <h3 class="works__item-title">
+                    家具のサブスクLP（サンプル）
+                  </h3>
+                  <p class="works__item-detail">詳しく見る</p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section section_bgc2">
+          <div class="section__inner section__about">
+            <div class="about__img">
+              <img src="./img/self/img_about.jpg" alt="" />
+            </div>
+            <div class="about__contents">
+              <div class="section__heading">
+                <div class="section__heading-main">About -</div>
+                <div class="section__heading-sub">私について</div>
+              </div>
+              <p class="section__lead-text">
+                生年：1989年（平成元年）
+                <br />
+                出身：埼玉
+                <br />
+                在住：東京
+                <br />
+                趣味：ゲーム（1人で黙々系）、ダンス（LOCK）、料理（簡単なものに限る）
+                <br />
+                技術：HTML、CSS、JavaScript、TypeScript、Git、AWS少々
+              </p>
+              <p class="section__lead-text">
+                大学を卒業後、システムエンジニアをやっていました。
+                <br />
+                現在は、よりお客さんに近い立場で物作りをする為、Web制作の仕事をしています。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work Flow -->
+        <section id="flow" class="section section-bgc">
+          <div class="section__inner">
+            <div class="section__heading">
+              <div class="section__heading-main">Work Flow -</div>
+              <div class="section__heading-sub">制作の流れ</div>
+            </div>
+            <p class="section__lead-text">
+              ご相談〜納品までの大まかな流れです。状況に応じて柔軟に対応いたします。
+            </p>
+            <ol class="flow__list">
+              <li class="flow__item">
+                <div class="flow__item-number">1</div>
+                <div class="flow__item-contents">
+                  <div class="flow__item-img">
+                    <img src="./img/self/img_flow_1.png" alt="" />
+                  </div>
+                  <h3 class="flow__item-title">ご相談・お見積り</h3>
+                  <p class="flow__item-desc">
+                    要件や納期、予算などお気軽にご相談ください。
+                    <br />
+                    対応内容に応じてお見積りをお送りいたします。
+                  </p>
+                </div>
+              </li>
+              <li class="flow__item">
+                <div class="flow__item-number">2</div>
+                <div class="flow__item-contents">
+                  <div class="flow__item-img">
+                    <img src="./img/self/img_flow_2.png" alt="" />
+                  </div>
+                  <h3 class="flow__item-title">コーディング</h3>
+                  <p class="flow__item-desc">
+                    デザインカンプを元にコーディングを行います。コーディング後は品質チェックを行い調整します。
+                  </p>
+                </div>
+              </li>
+              <li class="flow__item">
+                <div class="flow__item-number">3</div>
+                <div class="flow__item-contents">
+                  <div class="flow__item-img">
+                    <img src="./img/self/img_flow_3.png" alt="" />
+                  </div>
+                  <h3 class="flow__item-title">確認</h3>
+                  <p class="flow__item-desc">
+                    お客様にコーディングしたサイトをご確認頂きます。不足部分の修正と対応を行います。
+                  </p>
+                </div>
+              </li>
+              <li class="flow__item">
+                <div class="flow__item-number">4</div>
+                <div class="flow__item-contents">
+                  <div class="flow__item-img">
+                    <img src="./img/self/img_flow_4.png" alt="" />
+                  </div>
+                  <h3 class="flow__item-title">納品</h3>
+                  <p class="flow__item-desc">
+                    コーディング後のファイル一式を納品いたします。
+                    <br />
+                    本番サーバーへのアップロードも対応可能です。
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Message -->
+        <section id="message" class="section">
+          <div class="section__inner section__message">
+            <div class="message__img">
+              <img src="./img/self/icon_message_2.jpg" alt="" />
+            </div>
+            <div class="message__contents">
+              <div class="section__heading">
+                <div class="section__heading-main">Message -</div>
+                <div class="section__heading-sub">ご依頼をお考えの方へ</div>
+              </div>
+              <p class="section__lead-text">
+                静的なHTMLコーディングについて、対応可能です。
+                <br />
+                今後は、WordPress化などできることを増やし、対応内容を拡げていきたいと考えています。
+                <br />
+                また、システムエンジニア時代の経験でお役に立てることがあれば、是非お手伝いさせていただきたいです。
+              </p>
+              <p class="section__lead-text">
+                連絡は24時間以内に返信させていただきます。
+              </p>
+              <p class="section__lead-text">
+                <!-- デザインに対して正確なコーディングを、コミュニケーションに対しては迅速な対応を心がけております。
+                <br /> -->
+                是非、業務のサポートをさせていただければと思います。よろしくお願いいたします。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- X -->
+        <section id="contact" class="section section-bgc-3">
+          <div class="section__inner">
+            <div class="contact_container">
+              <div class="section__heading">
+                <div class="section__heading-main">Contact -</div>
+              </div>
+              <p class="contact__text">ご連絡はXのDMよりお願いいたします。</p>
+              <a
+                class="contact__link"
+                href="https://x.com/furu_work"
+                target="_blank"
+              >
+                <span>Xへのリンクはこちら</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
